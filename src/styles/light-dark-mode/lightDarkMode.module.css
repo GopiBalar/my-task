@@ -1,0 +1,46 @@
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --button-bg: #000;
+  --button-text: #ffffff;
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  --text-primary: #ffffff;
+  --button-bg: #ffffff;
+  --button-text: #000;
+}
+
+.lightDarkMode {
+  background-color: var(--background);
+  color: var(--text-primary);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 22px;
+  transition: all 0.5s;
+}
+
+.lightDarkMode .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lightDarkMode .container p {
+  margin: 0px;
+}
+
+.lightDarkMode button {
+  background-color: var(--button-bg);
+  border: 1px solid var(--button-bg);
+  color: var(--button-text);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}

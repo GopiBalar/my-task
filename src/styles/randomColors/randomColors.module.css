@@ -1,0 +1,22 @@
+.randomColorContainer {
+  width: 100vw;
+  height: 100vh;
+}
+
+.randomColorContainer button {
+  margin: 5px 15px;
+  border: none;
+  padding: 0.5rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.randomColorsFont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  color: white;
+  font-size: 40px;
+  margin-top: 50px;
+}

@@ -1,0 +1,19 @@
+.scrollContainer {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+.scrollProgressTrackingContainer {
+  width: 100%;
+  height: 10px;
+  background-color: #f50057;
+}
+
+.currentProgressBar {
+  width: 0%;
+  height: 10px;
+  background-color: #aaf900;
+}
