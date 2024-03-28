@@ -1,0 +1,62 @@
+.customModalPopupConatiner button {
+  padding: 10px 15px;
+  margin-top: 4rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: black;
+  color: white;
+}
+.modalContainer {
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #b9f6ca;
+}
+
+.modalContain {
+  position: relative;
+  background-color: aliceblue;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  animation-name: animateModal;
+  animation-duration: 0.5s;
+}
+
+.closeModalIcon {
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: bold;
+  float: right;
+}
+
+.header {
+  padding: 10px 40px;
+  background-color: #ba68c8;
+}
+
+.body {
+  padding: 90px 40px;
+  background-color: #fffde7;
+}
+
+.footer {
+  padding: 10px 40px;
+  background-color: #eeff41;
+}
+
+@keyframes animateModal {
+  from {
+    top: -200px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
