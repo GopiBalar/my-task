@@ -1,0 +1,37 @@
+.serchAutoCompleteContainer {
+  background-color: #f3e5f5;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.serchAutoInput {
+  padding: 0.5rem;
+  width: 15%;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 1px solid gray;
+}
+
+.listItemContainer {
+  width: 25%;
+  padding: auto 1rem;
+}
+
+.listItemUl {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.listItemUl li {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 10px;
+  cursor: pointer;
+}

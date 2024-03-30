@@ -11,6 +11,7 @@ import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 import CustomTab from "./components/custom-tab/CustomTab";
 import CustomModalPopup from "./components/custom-modal-popup/CustomModalPopup";
 import GithubProfileFinder from "./components/github-profile-finder/GithubProfileFinder";
+import SerchAutoComplete from "./components/serch-autoComplete-with-api/SerchAutoComplete";
 
 function App() {
   return (
@@ -52,7 +53,10 @@ function App() {
       {/* <CustomModalPopup /> */}
 
       {/* <h1>Github Profile Finder</h1> */}
-      <GithubProfileFinder />
+      {/* <GithubProfileFinder /> */}
+
+      {/* <h1>Serch Auto Complete API</h1> */}
+      <SerchAutoComplete />
     </div>
   );
 }
