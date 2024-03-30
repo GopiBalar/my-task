@@ -1,0 +1,62 @@
+.githubContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.githubContainerInner {
+  display: flex;
+  gap: 16px;
+}
+
+.githubContainerInner input {
+  padding: 0.5rem 1rem;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+}
+
+.githubContainerInner button {
+  padding: 5px 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background-color: #000000;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.userCardContainer {
+  background-color: #fce4ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(250, 205, 205);
+  width: 80%;
+  gap: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.userCardImg img {
+  border-radius: 50%;
+  height: 150px;
+  aspect-ratio: 1/1;
+}
+
+.userCardInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.userCardInfo p {
+  margin: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
