@@ -27,9 +27,8 @@ function UserCard({ user }) {
             month: "short",
           })} ${createdDate.getFullYear()}`}
         </p>
-        <div>
-          <h2>{login}</h2>
-        </div>
+      </div>
+      <div className={styles.userCardDetaile}>
         <div>
           <p>Public Repository :</p>
           <p>{public_repos}</p>

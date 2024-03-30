@@ -18,7 +18,6 @@ function GithubProfileFinder() {
       setUserName("");
     }
   }
-  console.log("userData", userData);
 
   function handleSubmit() {
     fetchGithubUserData();
@@ -30,6 +29,7 @@ function GithubProfileFinder() {
 
   if (loading) return <h1>Loading ...</h1>;
 
+  console.log("userData", userData);
   return (
     <div className={styles.githubContainer}>
       <div className={styles.githubContainerInner}>
@@ -42,9 +42,7 @@ function GithubProfileFinder() {
         />
         <button onClick={handleSubmit}>Search</button>
       </div>
-      {userData === null ? null : (
-        <UserCard user={userData} />
-      )}
+      {userData === null ? null : <UserCard user={userData} />}
     </div>
   );
 }

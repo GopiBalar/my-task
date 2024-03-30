@@ -36,10 +36,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgb(250, 205, 205);
-  width: 80%;
+  border: 2px solid rgb(250, 205, 205);
+  width: 70%;
   gap: 5px;
-  margin-top: 1rem;
+  margin: auto;
+  margin-top: 3rem;
   padding: 1rem;
 }
 
@@ -51,12 +52,32 @@
 
 .userCardInfo {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  /* flex-direction: column; */
+  gap: 16px;
+}
+
+.userCardInfo a {
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .userCardInfo p {
   margin: 8px;
-  font-size: 18px;
+  font-size: 20px;
+  text-shadow: 0 0 1px #0b0b0b;
+  font-weight: 600;
+}
+
+.userCardDetaile {
+  display: flex;
+  margin-top: 22px;
+  gap: 36px;
+}
+
+.userCardDetaile p {
+  margin: 8px;
+  font-size: 20px;
   font-weight: 500;
+  text-shadow: 0 0 1px #0b0b0b;
 }
