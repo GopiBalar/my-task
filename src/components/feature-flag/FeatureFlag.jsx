@@ -1,14 +1,15 @@
 import React, { useContext } from "react";
+import { FeatureFlagDataContext } from "./context/FeatureFlagContext";
 import LightDarkMode from "../light-dark-mode/LightDarkMode";
+import TicTacToe from "../tic-tac-toe/TicTacToe";
+import TreeView from "../tree-view/TreeView";
 import RandomColors from "../randomColors/RandomColors";
 import Accordian from "../accordian/Accordian";
-import TreeView from "../tree-view/TreeView";
-import TicTacToe from "../tic-tac-toe/TicTacToe";
-import { FeatureFlagsContext } from "./context/FeatureFlagContext";
 
 function FeatureFlag() {
-  const { enabledFlags, loading } = useContext(FeatureFlagsContext);
-  const componentToRender = [
+  const { enabledFlags, loading } = useContext(FeatureFlagDataContext);
+  console.log("object", enabledFlags);
+  const dataRender = [
     {
       key: "showLightAndDarkMode",
       component: <LightDarkMode />,
@@ -18,12 +19,12 @@ function FeatureFlag() {
       component: <TicTacToe />,
     },
     {
-      key: "showRandomColorGenerator",
-      component: <RandomColors />,
-    },
-    {
       key: "showAccourdian",
       component: <Accordian />,
+    },
+    {
+      key: "showRandomColors",
+      component: <RandomColors />,
     },
     {
       key: "showTreeView",
@@ -31,18 +32,16 @@ function FeatureFlag() {
     },
   ];
 
-  function checkEnabledFlags(getCurrentKey) {
-    console.log("object", getCurrentKey);
+  function chackEnableFlag(getCurrentKey) {
     return enabledFlags[getCurrentKey];
   }
-
-  if (loading) return <h1>Loading ...</h1>;
+  if (loading) return <p>Loading</p>;
 
   return (
     <div>
-      <h1>FeatureFlag</h1>
-      {componentToRender.map((componentItem) =>
-        checkEnabledFlags(componentItem.key) ? componentItem.component : null
+      <h1>Feature Flag</h1>
+      {dataRender.map((item) =>
+        chackEnableFlag(item.key) ? item.component : null
       )}
     </div>
   );

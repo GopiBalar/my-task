@@ -1,16 +1,15 @@
 import React, { createContext, useEffect, useState } from "react";
 import featureFlagDataServiceCall from "../../../services/featureFlagData";
 
-export const FeatureFlagsContext = createContext(null);
+export const FeatureFlagDataContext = createContext(null);
 
-function FeatureFlagGlobalStateContext({ children }) {
-  const [loading, setLoading] = useState(false);
+function FeatureFlagContext({ children }) {
   const [enabledFlags, setEnabledFlags] = useState({});
+  const [loading, setLoading] = useState(false);
 
-  async function fetchFeatureFlags() {
+  async function fetchFeatureFlag() {
     try {
       setLoading(true);
-      // original service call
       const response = await featureFlagDataServiceCall();
       setEnabledFlags(response);
       setLoading(false);
@@ -20,16 +19,17 @@ function FeatureFlagGlobalStateContext({ children }) {
       throw new Error(err);
     }
   }
+  console.log("response", enabledFlags);
 
   useEffect(() => {
-    fetchFeatureFlags();
+    fetchFeatureFlag();
   }, []);
 
   return (
-    <FeatureFlagsContext.Provider value={{ enabledFlags, loading }}>
+    <FeatureFlagDataContext.Provider value={{ enabledFlags, loading }}>
       {children}
-    </FeatureFlagsContext.Provider>
+    </FeatureFlagDataContext.Provider>
   );
 }
 
-export default FeatureFlagGlobalStateContext;
+export default FeatureFlagContext;

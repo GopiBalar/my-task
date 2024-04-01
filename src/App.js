@@ -15,6 +15,9 @@ import SerchAutoComplete from "./components/serch-autoComplete-with-api/SerchAut
 import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 import FeatureFlag from "./components/feature-flag/FeatureFlag";
 import FeatureFlagGlobalStateContext from "./components/feature-flag/context/FeatureFlagContext";
+import UseFetchCustomHookTest from "./components/useFetch-Custom-Hook/UseFetchCustomHookTest";
+import UseOnClickOutSideTest from "./components/use-Outside-Click/UseOnClickOutSideTest";
+import UseWindowResize from "./components/use-Window-Resize/UseWindowResize";
 
 function App() {
   return (
@@ -80,9 +83,19 @@ function App() {
 
       {/* --------- 15 --------------*/}
       {/* <h1>Feature Flag</h1> */}
-      <FeatureFlagGlobalStateContext>
+      {/* <FeatureFlagGlobalStateContext>
         <FeatureFlag />
-      </FeatureFlagGlobalStateContext>
+      </FeatureFlagGlobalStateContext> */}
+
+      {/* --------- 16 --------------*/}
+      {/* <h1>useFetch custom Hook</h1> */}
+      {/* <UseFetchCustomHookTest /> */}
+
+      {/* --------- 17 --------------*/}
+      {/* <UseOnClickOutSideTest /> */}
+
+      {/* --------- 18 --------------*/}
+      <UseWindowResize />
     </div>
   );
 }
