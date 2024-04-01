@@ -1,0 +1,19 @@
+.scrollToTopBottom {
+  background-color: #e0f7fa;
+}
+h1,
+h3 {
+  margin: 0;
+}
+button {
+  padding: 0.6rem 0.8rem;
+  background-color: #f8bbd0;
+  border: none;
+  font-weight: 600;
+  /* font-size: 14px; */
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #ec407a;
+}

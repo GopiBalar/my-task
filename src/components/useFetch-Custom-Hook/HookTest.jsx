@@ -20,7 +20,6 @@ function useFetch(url, options = {}) {
       setLoading(false);
     }
   }
-  console.log("datta", data);
 
   useEffect(() => {
     fetchData();
