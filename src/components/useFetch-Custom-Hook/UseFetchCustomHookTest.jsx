@@ -1,5 +1,6 @@
 import React from "react";
 import useFetch from "./HookTest";
+import styles from "../../styles/useFetch-custom-hook/useFetchCustomHook.module.css";
 
 function UseFetchCustomHookTest() {
   const { data, loading, error } = useFetch(
@@ -10,7 +11,7 @@ function UseFetchCustomHookTest() {
   console.log("data", data, "error", error, "loading", loading);
 
   return (
-    <div>
+    <div className={styles.useFetchCustomHook}>
       <h1>Use Fetch Hook</h1>
       {loading ? <h1>Loading ... Please Wait!</h1> : null}
       {error ? <h1>{error}</h1> : null}

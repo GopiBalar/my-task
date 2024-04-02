@@ -33,3 +33,6 @@
   font-size: 16px;
   color: white;
 }
+.restartBtn:hover {
+  background-color: #00695c;
+}

@@ -18,7 +18,7 @@ function StarRating({ noOfStar = 10 }) {
   }
 
   return (
-    <div className={styles.star}>
+    <div className={styles.starRatingContainer}>
       {[...Array(noOfStar)].map((_, index) => {
         index += 1;
         return (

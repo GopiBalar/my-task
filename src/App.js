@@ -2,23 +2,24 @@ import "./App.css";
 import Accordian from "./components/accordian/Accordian";
 import StarRating from "./components/starRating/StarRating";
 import RandomColors from "./components/randomColors/RandomColors";
-import ImageSlider from "./components/imageSlider/ImageSlider";
 import LoadMoreData from "./components/load-more-data/LoadMoreData";
 import TreeView from "./components/tree-view/TreeView";
 import QrCodeGenerator from "./components/qr-code-generator/QrCodeGenerator";
 import LightDarkMode from "./components/light-dark-mode/LightDarkMode";
-import ScrollIndicator from "./components/scroll-indicator/ScrollIndicator";
 import CustomTab from "./components/custom-tab/CustomTab";
 import CustomModalPopup from "./components/custom-modal-popup/CustomModalPopup";
 import GithubProfileFinder from "./components/github-profile-finder/GithubProfileFinder";
 import SerchAutoComplete from "./components/serch-autoComplete-with-api/SerchAutoComplete";
 import TicTacToe from "./components/tic-tac-toe/TicTacToe";
-import FeatureFlag from "./components/feature-flag/FeatureFlag";
-import FeatureFlagGlobalStateContext from "./components/feature-flag/context/FeatureFlagContext";
 import UseFetchCustomHookTest from "./components/useFetch-Custom-Hook/UseFetchCustomHookTest";
 import UseOnClickOutSideTest from "./components/use-Outside-Click/UseOnClickOutSideTest";
 import UseWindowResize from "./components/use-Window-Resize/UseWindowResize";
 import ScrollToTopBottom from "./components/scroll-To-Top&Bottom/ScrollToTop&Bottom";
+import Layout from "./layout/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ImageSlider4 from "./pages/ImageSlider4";
+import FeatureFlags from "./pages/FeatureFlags";
+import ScrolIndicatore from "./pages/ScrolIndicatore";
 
 function App() {
   return (
@@ -99,7 +100,36 @@ function App() {
       {/* <UseWindowResize /> */}
 
       {/* --------- 19 --------------*/}
-      <ScrollToTopBottom />
+      {/* <ScrollToTopBottom /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Accordian />} />
+            <Route path="2" element={<StarRating />} />
+            <Route path="3" element={<RandomColors />} />
+            {/* imageSlider */}
+            <Route path="4" element={<ImageSlider4 />} />
+            <Route path="5" element={<LoadMoreData />} />
+            <Route path="6" element={<TreeView />} />
+            <Route path="7" element={<QrCodeGenerator />} />
+            <Route path="8" element={<LightDarkMode />} />
+            {/* scrollIndicator */}
+            <Route path="9" element={<ScrolIndicatore />} />
+            <Route path="10" element={<CustomTab />} />
+            <Route path="11" element={<CustomModalPopup />} />
+            <Route path="12" element={<GithubProfileFinder />} />
+            <Route path="13" element={<SerchAutoComplete />} />
+            <Route path="14" element={<TicTacToe />} />
+            {/* FeatureFlag */}
+            <Route path="15" element={<FeatureFlags />} />
+            <Route path="16" element={<UseFetchCustomHookTest />} />
+            <Route path="17" element={<UseOnClickOutSideTest />} />
+            <Route path="18" element={<UseWindowResize />} />
+            <Route path="19" element={<ScrollToTopBottom />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

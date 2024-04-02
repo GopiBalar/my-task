@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.githubContainerInner button:hover {
+  background-color: #ec407a;
+}
+
 .userCardContainer {
   background-color: #fce4ec;
   display: flex;

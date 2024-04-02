@@ -1,0 +1,21 @@
+.qrCodeContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.qrBtn {
+  padding: 0.5rem 0.9rem;
+  background-color: #f8bbd0;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  border-radius: 8px;
+  margin: 0 0 30px 30px;
+}
+
+.qrBtn:hover {
+  background-color: #ec407a;
+}

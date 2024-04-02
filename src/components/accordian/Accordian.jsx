@@ -15,7 +15,7 @@ function Accordian() {
       </div>
 
       <button onClick={() => setMultiSelection(!multiSelection)}>
-        Multi Selection
+        {multiSelection ? "Multi Selected" : "Multi Selection"}
       </button>
 
       <div className={styles.accordianInner}>

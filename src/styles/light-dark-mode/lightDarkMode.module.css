@@ -44,3 +44,7 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+.lightDarkMode button:hover {
+  background-color: #ec407a;
+}

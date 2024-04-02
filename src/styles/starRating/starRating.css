@@ -1,9 +1,9 @@
-  .starRatingContainer {
+.starRatingContainer {
   background-color: pink;
 }
 
 .active {
-  color: #fff700;
+  color: #f50057;
 }
 
 .inactive {

@@ -1,15 +1,16 @@
 import React from "react";
 import useWindowResizeHook from "./HookTest";
+import styles from "../../styles/use-Window-Resize/useWindowResize.module.css";
 
 function UseWindowResize() {
   const windowResize = useWindowResizeHook();
   const { width, height } = windowResize;
 
   return (
-    <div>
+    <div className={styles.useWindowResize}>
       <h1>Use Window Resize Hook</h1>
-      <p>Width is : {width}</p>
-      <p>Height is : {height}</p>
+      <h5>Width is : {width}</h5>
+      <h5>Height is : {height}</h5>
     </div>
   );
 }
