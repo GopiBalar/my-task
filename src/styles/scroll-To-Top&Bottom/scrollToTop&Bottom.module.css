@@ -17,3 +17,11 @@ h3 {
 .scrollToTopBottom button:hover {
   background-color: #ec407a;
 }
+
+.scrollSectionbtn {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px gray;
+  font-weight: 500;
+}

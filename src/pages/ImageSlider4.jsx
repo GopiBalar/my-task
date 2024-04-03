@@ -6,7 +6,7 @@ function ImageSlider4() {
     <ImageSlider
       url={`https://picsum.photos/v2/list`}
       limit={`10`}
-      page={`3`}
+      page={`12`}
     />
   );
 }

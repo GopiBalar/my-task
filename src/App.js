@@ -20,6 +20,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ImageSlider4 from "./pages/ImageSlider4";
 import FeatureFlags from "./pages/FeatureFlags";
 import ScrolIndicatore from "./pages/ScrolIndicatore";
+import ScrollToSection from "./components/scroll-To-Top&Bottom/ScrollToSection";
 
 function App() {
   return (
@@ -127,6 +128,7 @@ function App() {
             <Route path="17" element={<UseOnClickOutSideTest />} />
             <Route path="18" element={<UseWindowResize />} />
             <Route path="19" element={<ScrollToTopBottom />} />
+            <Route path="20" element={<ScrollToSection />} />
           </Route>
         </Routes>
       </BrowserRouter>

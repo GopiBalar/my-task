@@ -17,9 +17,7 @@
 // }
 
 // export default Navbar;
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
@@ -53,9 +51,6 @@ function NavScrollExample() {
               <NavDropdown.Item href="/9">Scroll Indiactore</NavDropdown.Item>
               <NavDropdown.Item href="/10">Custom Tab</NavDropdown.Item>
             </NavDropdown>
-            {/* <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link> */}
             <NavDropdown title="Demo2" id="navbarScrollingDropdown">
               <NavDropdown.Item href="/11">Custom Modal PopUp</NavDropdown.Item>
               <NavDropdown.Item href="/12">
@@ -72,11 +67,12 @@ function NavScrollExample() {
               <NavDropdown.Item href="/17">
                 Use OnClick OutSide Test
               </NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="/18">Use Window Resize</NavDropdown.Item>
+              <NavDropdown.Divider />
               <NavDropdown.Item href="/19">
                 Scroll To Top Bottom
               </NavDropdown.Item>
+              <NavDropdown.Item href="/20">Scroll To Section</NavDropdown.Item>
             </NavDropdown>
           </Nav>
           {/* <Form className="d-flex">

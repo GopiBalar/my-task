@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 import "../../styles/imageSlider/imageSlider.css";
 
-function ImageSlider({ url, limit = 5, page = 1 }) {
+function ImageSlider({ url, limit, page }) {
   const [images, setImages] = useState([]);
   const [errorMsg, setErrorMsg] = useState(null);
   const [loading, setLoading] = useState(false);
